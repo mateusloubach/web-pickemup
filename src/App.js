@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Map from './components/map';
 import './App.css';
+import points from './points';
 
-function App() {
+// const token = localStorage.getItem("token") ?? "0"
+const token = "12345";
+
+export default function App() {
+  let details = useState(points)[0];
+
+  // useEffect(() => {
+  //   async function getPoints() {
+  //     let response = await fetch(`http://localhost:5000?token=${token}`)
+  //     let details = await response.json()
+
+  //     setDetails(details)
+  //   }
+
+  //   getPoints()
+  // }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {details ? <Map details={details} token={token} /> : <p>Loading...</p>}
     </div>
   );
 }
-
-export default App;
