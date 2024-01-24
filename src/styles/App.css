@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -31,9 +32,15 @@ footer {
   font-size: 20px;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
+  /* position: sticky; */
 }
 
 footer a {
   text-decoration: none;
-  color: #4FC4CF;
+  color: #4fc4cf;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #181818;
 }

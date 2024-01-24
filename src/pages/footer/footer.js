@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer">
       Currently being built by{" "}
       <a href="https://linkedin.com/in/mateusloubach">mateusloubach</a>{" "}
     </footer>
