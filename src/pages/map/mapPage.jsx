@@ -222,7 +222,7 @@ const MapPage = (props) => {
             <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
               PKMUP
             </Typography>
-            <Button color="inherit">THE DEVELOPERS</Button>
+            <Button color="inherit">My Github</Button>
           </Toolbar>
         </AppBar>
 
