@@ -72,7 +72,7 @@ export default function Map({ details, token }) {
   const map = useRef(null);
   const [lat] = useState(-18.9113);
   const [lng] = useState(-48.2622);
-  const [zoom] = useState(5);
+  const [zoom] = useState(10);
   const marker = useRef(null);
   const geocoderControl = useRef(null);
   const navigationControl = useRef(null);
