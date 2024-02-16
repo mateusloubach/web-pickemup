@@ -8,8 +8,8 @@ function randomPoint(centerLong, centerLat) {
     return [long, lat]
 }
 
-let userPoint = randomPoint(-48.3459658, -18.9218912)
-let user = { point: userPoint, contact: "+55(31)99495-9594", time: "Sexta-Feira, 16 de Fev. 2024", token: "12345" }
+let userPoint = randomPoint(-48.2812944, -18.9165007)
+let user = { point: userPoint, contact: "+55 (31) 99432-9234", time: "Sexta-Feira, 16 de Fev. 2024", token: "12345" }
 
 
 let points = [user]
@@ -17,7 +17,7 @@ let points = [user]
 for (let i = 0; i < 10; i++) {
     let point = randomPoint(-48.3459658, -18.9218912)
 
-    let details = { point, contact: "+55(31)99495-9594", time: "Sexta-Feira, 16 de Fev. 2024"
+    let details = { point, contact: "+55 (31) 99432-9234", time: "Sexta-Feira, 16 de Fev. 2024"
     }
 
     points.push(details)

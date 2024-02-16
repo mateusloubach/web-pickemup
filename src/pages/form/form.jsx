@@ -89,7 +89,10 @@ const MapPage = (props) => {
 
   const drawer = (
     <>
-      <h2>Insira os detalhes da sua viagem:</h2>
+      <h2 style={{ fontSize: "14px", padding: "22px" }}>
+        Insira os detalhes da sua viagem:
+      </h2>
+    
       <Divider />
 
       <Container sx={{ width: "100%", margin: "0 auto", flex: "flex", mt: 5 }}>
@@ -112,7 +115,8 @@ const MapPage = (props) => {
               <Grid item xs={12}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DatePicker
-                    inputFormat="DD/MM/YYYY"
+                    inputFormat="dd/MM/yyyy"
+
                     label="Que dia será sua viagem?"
                     value={value}
                     onChange={(newValue) => {
