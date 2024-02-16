@@ -38,7 +38,7 @@ const Home = () => {
                   paragraph={true}
                   sx={{ maxWidth: 500, p: 0, mb: 3 }}
                 >
-                  TMTM helps you find people who are headed to the same location
+                  PKMUP helps you find people who are headed to the same location
                   as you, so you can share a ride and split the cost with them.
                 </Typography>
                 <Box mt={5}>

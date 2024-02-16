@@ -70,8 +70,8 @@ const mapStyle = {
 export default function Map({ details, token }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lat] = useState(9.082);
-  const [lng] = useState(8.6753);
+  const [lat] = useState(-18.9113);
+  const [lng] = useState(-48.2622);
   const [zoom] = useState(5);
   const marker = useRef(null);
   const geocoderControl = useRef(null);

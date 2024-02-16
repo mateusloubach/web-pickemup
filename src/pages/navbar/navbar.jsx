@@ -19,7 +19,7 @@ const Navbar = () => {
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
               <Link to="/" style={{ textDecoration: "none" }}>
-                TMNT
+                PKMUP
               </Link>
             </Typography>
 

@@ -220,7 +220,7 @@ const MapPage = (props) => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-              TMTM
+              PKMUP
             </Typography>
             <Button color="inherit">THE DEVELOPERS</Button>
           </Toolbar>
