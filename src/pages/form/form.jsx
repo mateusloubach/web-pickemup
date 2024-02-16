@@ -46,6 +46,7 @@ import {
 import { Link } from "react-router-dom";
 //
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Padding } from "@mui/icons-material";
 
 const token = "12345";
 const drawerWidth = 300;
@@ -88,22 +89,23 @@ const MapPage = (props) => {
 
   const drawer = (
     <>
-      <Toolbar />
+      <h2>Insira os detalhes da sua viagem:</h2>
       <Divider />
 
       <Container sx={{ width: "100%", margin: "0 auto", flex: "flex", mt: 5 }}>
         <div>
+          <h2>Olá, Mateus</h2><br></br>
           <form noValidate>
             <Grid container spacing={0.5}>
               <Grid item xs={12}>
                 <FormControl sx={{ m: 0, width: "100%" }}>
                   <InputLabel htmlFor="outlined-adornment-amount">
-                    Where are you going to?
+                    Qual é o seu Destino?
                   </InputLabel>
                   <OutlinedInput
                     id="outlined-telegramID-input"
-                    label="Where are you going to?"
-                    autoComplete="nigga-stfu"
+                    label="Qual é o seu Destino?"
+                    autoComplete="destino-input"
                   />
                 </FormControl>
               </Grid>
@@ -111,7 +113,7 @@ const MapPage = (props) => {
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <DatePicker
                     inputFormat="DD/MM/YYYY"
-                    label="What day are you leaving?"
+                    label="Que dia será sua viagem?"
                     value={value}
                     onChange={(newValue) => {
                       setValue(newValue);
@@ -137,15 +139,15 @@ const MapPage = (props) => {
                   }}
                 >
                   <InputLabel htmlFor="outlined-adornment-amount">
-                    How much is the ride fee?
+                    Qual o valor da sua corrida?
                   </InputLabel>
                   <OutlinedInput
                     id="outlined-telegramID-input"
                     startAdornment={
-                      <InputAdornment position="start">₦</InputAdornment>
+                      <InputAdornment position="start">R$</InputAdornment>
                     }
-                    label="How much is the ride fee?"
-                    autoComplete="nigga-stfu"
+                    label="Qual o valor da sua corrida?"
+                    autoComplete="fee-input"
                   />
                 </FormControl>
               </Grid>
@@ -153,7 +155,7 @@ const MapPage = (props) => {
               <Grid item xs={12} md={12}>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <TimePicker
-                    label="Flight time?"
+                    label="Horário do vôo"
                     value={value}
                     onChange={(newValue) => {
                       setValue(newValue);
@@ -222,7 +224,7 @@ const MapPage = (props) => {
             </IconButton>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
               <Link to="/" style={{ textDecoration: "none" }}>
-                PMKUP
+                PKMUP
               </Link>
             </Typography>
             <Button color="inherit">My Github</Button>
